@@ -1,0 +1,142 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/phamh/source/CPEN-311/HW1
+vdoublesync
+Z0 !s110 1748152235
+!i10b 1
+!s100 :]4kH]XZk__N?:B8:_0<J0
+Ic?72gchB80EzE:DieiDY12
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/phamh/source/CPEN-311/Lab1/sim
+Z3 w1747890172
+8C:/Users/phamh/source/CPEN-311/Lab1/rtl/doublesync.v
+FC:/Users/phamh/source/CPEN-311/Lab1/rtl/doublesync.v
+L0 1
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1748152235.000000
+!s107 C:/Users/phamh/source/CPEN-311/Lab1/rtl/doublesync.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/phamh/source/CPEN-311/Lab1/rtl/doublesync.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+vGenerate_Arbitrary_Divided_Clk32
+R0
+!i10b 1
+!s100 8=iGlzck0b@NKb_VFN7YH2
+Ij4WZNo1h@UHmP`_4Vk:Ek1
+R1
+R2
+R3
+8C:/Users/phamh/source/CPEN-311/Lab1/rtl/Generate_Arbitrary_Divided_Clk32.v
+FC:/Users/phamh/source/CPEN-311/Lab1/rtl/Generate_Arbitrary_Divided_Clk32.v
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/phamh/source/CPEN-311/Lab1/rtl/Generate_Arbitrary_Divided_Clk32.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/phamh/source/CPEN-311/Lab1/rtl/Generate_Arbitrary_Divided_Clk32.v|
+!i113 1
+R6
+R7
+n@generate_@arbitrary_@divided_@clk32
+vGenerate_Arbitrary_Divided_Clk32_tb
+Z8 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+R0
+!i10b 1
+!s100 RT7VJF<k9^M3=LeK]^>4M3
+IA7=P@?ec@0GmSg_6UEH5e2
+R1
+Z9 !s105 Generate_Arbitrary_Divided_Clk32_tb_sv_unit
+S1
+R2
+w1748149447
+Z10 8C:/Users/phamh/source/CPEN-311/Lab1/sim/Generate_Arbitrary_Divided_Clk32_tb.sv
+Z11 FC:/Users/phamh/source/CPEN-311/Lab1/sim/Generate_Arbitrary_Divided_Clk32_tb.sv
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+Z12 !s107 C:/Users/phamh/source/CPEN-311/Lab1/sim/Generate_Arbitrary_Divided_Clk32_tb.sv|
+Z13 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/phamh/source/CPEN-311/Lab1/sim/Generate_Arbitrary_Divided_Clk32_tb.sv|
+!i113 1
+Z14 o-work work -sv
+R7
+n@generate_@arbitrary_@divided_@clk32_tb
+vLCD_Scope_Encapsulated_pacoblaze_wrapper
+R0
+!i10b 1
+!s100 FoFm9Xbm^6EPmFgPLScoo1
+IHB45;?lB4=9O:YbJePneg0
+R1
+R2
+R3
+8C:/Users/phamh/source/CPEN-311/Lab1/rtl/LCD_Scope_Encapsulated_pacoblaze_wrapper.v
+FC:/Users/phamh/source/CPEN-311/Lab1/rtl/LCD_Scope_Encapsulated_pacoblaze_wrapper.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/phamh/source/CPEN-311/Lab1/rtl/LCD_Scope_Encapsulated_pacoblaze_wrapper.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/phamh/source/CPEN-311/Lab1/rtl/LCD_Scope_Encapsulated_pacoblaze_wrapper.v|
+!i113 1
+R6
+R7
+n@l@c@d_@scope_@encapsulated_pacoblaze_wrapper
+vscope_capture
+R0
+!i10b 1
+!s100 ?c8@nJ?GNKKPRC43[lbc>3
+IR7>66l:D]gK1TQkh3>ol90
+R1
+R2
+R3
+8C:/Users/phamh/source/CPEN-311/Lab1/rtl/scope_capture.v
+FC:/Users/phamh/source/CPEN-311/Lab1/rtl/scope_capture.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/phamh/source/CPEN-311/Lab1/rtl/scope_capture.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/phamh/source/CPEN-311/Lab1/rtl/scope_capture.v|
+!i113 1
+R6
+R7
+vwidereg
+R0
+!i10b 1
+!s100 LUYnXcSA1`YNl5LN[HPDl3
+IDBn=:FK3zI93MRZd]dz>M2
+R1
+R2
+R3
+8C:/Users/phamh/source/CPEN-311/Lab1/rtl/widereg.v
+FC:/Users/phamh/source/CPEN-311/Lab1/rtl/widereg.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/phamh/source/CPEN-311/Lab1/rtl/widereg.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/phamh/source/CPEN-311/Lab1/rtl/widereg.v|
+!i113 1
+R6
+R7

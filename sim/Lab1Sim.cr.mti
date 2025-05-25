@@ -1,0 +1,43 @@
+C:/Users/phamh/source/CPEN-311/Lab1/rtl/widereg.v {1 {vlog -work work -stats=none C:/Users/phamh/source/CPEN-311/Lab1/rtl/widereg.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module widereg
+
+Top level modules:
+	widereg
+
+} {} {}} C:/Users/phamh/source/CPEN-311/Lab1/sim/Generate_Arbitrary_Divided_Clk32_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/phamh/source/CPEN-311/Lab1/sim/Generate_Arbitrary_Divided_Clk32_tb.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Generate_Arbitrary_Divided_Clk32_tb
+
+Top level modules:
+	Generate_Arbitrary_Divided_Clk32_tb
+
+} {} {}} C:/Users/phamh/source/CPEN-311/Lab1/rtl/LCD_Scope_Encapsulated_pacoblaze_wrapper.v {1 {vlog -work work -stats=none C:/Users/phamh/source/CPEN-311/Lab1/rtl/LCD_Scope_Encapsulated_pacoblaze_wrapper.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module LCD_Scope_Encapsulated_pacoblaze_wrapper
+
+Top level modules:
+	LCD_Scope_Encapsulated_pacoblaze_wrapper
+
+} {} {}} C:/Users/phamh/source/CPEN-311/Lab1/rtl/doublesync.v {1 {vlog -work work -stats=none C:/Users/phamh/source/CPEN-311/Lab1/rtl/doublesync.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module doublesync
+
+Top level modules:
+	doublesync
+
+} {} {}} C:/Users/phamh/source/CPEN-311/Lab1/rtl/Generate_Arbitrary_Divided_Clk32.v {1 {vlog -work work -stats=none C:/Users/phamh/source/CPEN-311/Lab1/rtl/Generate_Arbitrary_Divided_Clk32.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Generate_Arbitrary_Divided_Clk32
+
+Top level modules:
+	Generate_Arbitrary_Divided_Clk32
+
+} {} {}} C:/Users/phamh/source/CPEN-311/Lab1/rtl/scope_capture.v {1 {vlog -work work -stats=none C:/Users/phamh/source/CPEN-311/Lab1/rtl/scope_capture.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module scope_capture
+
+Top level modules:
+	scope_capture
+
+} {} {}}
