@@ -200,20 +200,65 @@ wire Sample_Clk_Signal;
 // Insert your code for Lab1 here!
 //
 //
-            
 
+/*         
+ * Switches used to control frequency divider : SW[3:1] = {SW[3], SW[2], SW[1]}
+ * 
+ * Octave Encoding:
+ * Do     Re     Mi     Fa     So     La     Si     Do2
+ * 000    001    010    011    100    101    110    111
+ *
+ * Sound Frequencies:
+ * 523Hz  587Hz  659Hz  698Hz  783Hz  880Hz  987Hz  1046Hz 
+ * 
+ * N values for frequency divider:
+ * 47801  42589  37936  35817  31928  28409  25329  23901
+ * 
+ * found by solving outclk = inclk/(2*N)
+ * -> Sound_Freq = CLK_50M/(2*N) -> N = CLK_50M/(2*Sound_Freq)
+ * and rounding to nearest integer
+ * 
+ */
 
+typedef enum logic [2:0] {Do, Re, Mi, Fa, So, La, Si, Do2} octave; 
 
+logic Do_clk_signal, Re_clk_signal, Mi_clk_ignal, Fa_clk_signal, 
+      So_clk_signal, La_clk_signal, Si_clk_signal, Do2_clk_signal;
 
+octave [2:0] audio_select;
+assign audio_select = {SW[3], SW[2], SW[1]};
 
+////// MAKE SURE RESET OCCURS AT LEAST ONCE BEFORE USE
+// Use KEY[3] for synch. reset
+Clk_Freq_Divider #(.N(47801)) Do_freq_div (.inclk(CLK_50M),.reset(!KEY[3]),.outclk(Do_clk_signal));
+Clk_Freq_Divider #(.N(42589)) Re_freq_div (.inclk(CLK_50M),.reset(!KEY[3]),.outclk(Re_clk_signal));
+Clk_Freq_Divider #(.N(37936)) Mi_freq_div (.inclk(CLK_50M),.reset(!KEY[3]),.outclk(Mi_clk_signal));
+Clk_Freq_Divider #(.N(35817)) Fa_freq_div (.inclk(CLK_50M),.reset(!KEY[3]),.outclk(Fa_clk_signal));
+Clk_Freq_Divider #(.N(31928)) So_freq_div (.inclk(CLK_50M),.reset(!KEY[3]),.outclk(So_clk_signal));
+Clk_Freq_Divider #(.N(28409)) La_freq_div (.inclk(CLK_50M),.reset(!KEY[3]),.outclk(La_clk_signal));
+Clk_Freq_Divider #(.N(25329)) Si_freq_div (.inclk(CLK_50M),.reset(!KEY[3]),.outclk(Si_clk_signal));
+Clk_Freq_Divider #(.N(23901)) Do2_freq_div (.inclk(CLK_50M),.reset(!KEY[3]),.outclk(Do2_clk_signal));
 
-            
+// CL for organ note selection using switches
+always_comb begin
+  case (audio_select)
+    Do : { Sample_Clk_Signal , audio_data } = { Do_clk_signal , {(~Do_clk_signal),{7{Do_clk_signal}}} };
+    Re : { Sample_Clk_Signal , audio_data } = { Re_clk_signal , {(~Re_clk_signal),{7{Re_clk_signal}}} };
+    Mi : { Sample_Clk_Signal , audio_data } = { Mi_clk_signal , {(~Mi_clk_signal),{7{Mi_clk_signal}}} };
+    Fa : { Sample_Clk_Signal , audio_data } = { Fa_clk_signal , {(~Fa_clk_signal),{7{Fa_clk_signal}}} };
+    So : { Sample_Clk_Signal , audio_data } = { So_clk_signal , {(~So_clk_signal),{7{So_clk_signal}}} };
+    La : { Sample_Clk_Signal , audio_data } = { La_clk_signal , {(~La_clk_signal),{7{La_clk_signal}}} };
+    Si : { Sample_Clk_Signal , audio_data } = { Si_clk_signal , {(~Si_clk_signal),{7{Si_clk_signal}}} };
+    Do2 : { Sample_Clk_Signal , audio_data } = { Do2_clk_signal , {(~Do2_clk_signal),{7{Do2_clk_signal}}} };
+    default : { Sample_Clk_Signal , audio_data } = { 1'bx , 8'bxxxx_xxxx };
+  endcase
+end
 
-assign Sample_Clk_Signal = Clock_1KHz;
+//assign Sample_Clk_Signal = Clock_1KHz;
 
 //Audio Generation Signal
 //Note that the audio needs signed data - so convert 1 bit to 8 bits signed
-wire [7:0] audio_data = {(~Sample_Clk_Signal),{7{Sample_Clk_Signal}}}; //generate signed sample audio signal
+//wire [7:0] audio_data = {(~Sample_Clk_Signal),{7{Sample_Clk_Signal}}}; //generate signed sample audio signal
 
 
 

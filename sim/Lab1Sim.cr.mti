@@ -1,43 +1,36 @@
-C:/Users/phamh/source/CPEN-311/Lab1/rtl/widereg.v {1 {vlog -work work -stats=none C:/Users/phamh/source/CPEN-311/Lab1/rtl/widereg.v
+C:/Users/phamh/source/CPEN-311/Lab1/rtl/Binary_Counter.sv {1 {vlog -work work -sv -stats=none C:/Users/phamh/source/CPEN-311/Lab1/rtl/Binary_Counter.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module widereg
+-- Compiling module Binary_Counter
 
 Top level modules:
-	widereg
+	Binary_Counter
 
-} {} {}} C:/Users/phamh/source/CPEN-311/Lab1/sim/Generate_Arbitrary_Divided_Clk32_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/phamh/source/CPEN-311/Lab1/sim/Generate_Arbitrary_Divided_Clk32_tb.sv
+} {} {}} C:/Users/phamh/source/CPEN-311/Lab1/sim/Clk_Freq_Divider_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/phamh/source/CPEN-311/Lab1/sim/Clk_Freq_Divider_tb.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module Generate_Arbitrary_Divided_Clk32_tb
+-- Compiling module Clk_Freq_Divider_tb
 
 Top level modules:
-	Generate_Arbitrary_Divided_Clk32_tb
+	Clk_Freq_Divider_tb
 
-} {} {}} C:/Users/phamh/source/CPEN-311/Lab1/rtl/LCD_Scope_Encapsulated_pacoblaze_wrapper.v {1 {vlog -work work -stats=none C:/Users/phamh/source/CPEN-311/Lab1/rtl/LCD_Scope_Encapsulated_pacoblaze_wrapper.v
+} {} {}} C:/Users/phamh/source/CPEN-311/Lab1/rtl/Clk_Freq_Divider.sv {1 {vlog -work work -sv -stats=none C:/Users/phamh/source/CPEN-311/Lab1/rtl/Clk_Freq_Divider.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module LCD_Scope_Encapsulated_pacoblaze_wrapper
+-- Compiling module Clk_Freq_Divider
 
 Top level modules:
-	LCD_Scope_Encapsulated_pacoblaze_wrapper
+	Clk_Freq_Divider
 
-} {} {}} C:/Users/phamh/source/CPEN-311/Lab1/rtl/doublesync.v {1 {vlog -work work -stats=none C:/Users/phamh/source/CPEN-311/Lab1/rtl/doublesync.v
+} {} {}} C:/Users/phamh/source/CPEN-311/Lab1/rtl/vTFFER.sv {1 {vlog -work work -sv -stats=none C:/Users/phamh/source/CPEN-311/Lab1/rtl/vTFFER.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module doublesync
+-- Compiling module vTFFER
 
 Top level modules:
-	doublesync
+	vTFFER
 
-} {} {}} C:/Users/phamh/source/CPEN-311/Lab1/rtl/Generate_Arbitrary_Divided_Clk32.v {1 {vlog -work work -stats=none C:/Users/phamh/source/CPEN-311/Lab1/rtl/Generate_Arbitrary_Divided_Clk32.v
+} {} {}} C:/Users/phamh/source/CPEN-311/Lab1/rtl/vDFFER.sv {1 {vlog -work work -sv -stats=none C:/Users/phamh/source/CPEN-311/Lab1/rtl/vDFFER.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module Generate_Arbitrary_Divided_Clk32
+-- Compiling module vDFFER
 
 Top level modules:
-	Generate_Arbitrary_Divided_Clk32
-
-} {} {}} C:/Users/phamh/source/CPEN-311/Lab1/rtl/scope_capture.v {1 {vlog -work work -stats=none C:/Users/phamh/source/CPEN-311/Lab1/rtl/scope_capture.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module scope_capture
-
-Top level modules:
-	scope_capture
+	vDFFER
 
 } {} {}}
